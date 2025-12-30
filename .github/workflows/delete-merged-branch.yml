@@ -1,7 +1,9 @@
 name: Delete "update" branch after merge
+
 on:
   pull_request:
     types: [closed]
+
 jobs:
   delete-branch:
     if: >
